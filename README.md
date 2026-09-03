@@ -1,4 +1,7 @@
 # React + Vite
+EM DESENVOLVIMENTO!
+
+Equipe Front-end: Jonathan Laureano, Danielle Braga, Daiany Lima, Gislaine Gois, Kelvin Honorato
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
