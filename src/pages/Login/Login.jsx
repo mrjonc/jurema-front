@@ -21,6 +21,7 @@ function Login() {
           <h2 className={styles.textPequeno}>
             Não tem uma conta? <a href="/cadastro">Cadastre-se aqui</a>
           </h2>
+          <button></button>
         </div>
       </div>
     </>
