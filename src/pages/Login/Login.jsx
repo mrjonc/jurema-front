@@ -1,31 +1,38 @@
 import styles from "./Login.module.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
-    <>
+    !
+    <div className={styles.loginPage}>
       <div className={styles.container}>
         <div className={styles.imgForm}>
           <img src="/imgtest.png" alt="Imagem do formulario" />
         </div>
         <div className={styles.form}>
-          <h1>Login do Estudante</h1>
+          <h1>Login</h1>
           <form action="username" method="post">
-            <label htmlFor="username">Email:</label>
-            <input type="text" id="username" name="username" required />
+            <div className={styles.inputs}>
+              <input type="text" id="username" name="username" placeholder="E-mail"  required />
+              <input type="password" id="password" name="password" placeholder="Senha" required />
+              <button type="submit"><b>Entrar</b></button>
+            </div>
+           
+           
 
-            <label htmlFor="password">Senha:</label>
-            <input type="password" id="password" name="password" required />
-
-            <button type="submit">Entrar</button>
+            
           </form>
-          <h2 className={styles.textPequeno}>
-            Não tem uma conta? <a href="/cadastro">Cadastre-se aqui</a>
-          </h2>
+          <h6 className={styles.textPequeno}>
+            Não tem uma conta? <Link to="/register">Cadastre-se aqui</Link>
+          </h6>
           
         </div>
       </div>
-    </>
+    </div>
+     
+    
   );
 }
 
 export default Login;
+
