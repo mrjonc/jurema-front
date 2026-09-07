@@ -7,11 +7,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import Login from "./pages/Login/Login.jsx";
+import Register from "./pages/Register/Register.jsx"
 
 const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 
   {
