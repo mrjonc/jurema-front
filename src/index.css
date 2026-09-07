@@ -1,22 +1,9 @@
-/* Reseta margens e barras de rolagem */
-*, *::before, *::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-/* Força a div principal do React a ocupar a tela inteira */
-#root {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #72b2d3; /* A cor azul do seu fundo */
+html {
+  background-color: #72b2d3;
 }
