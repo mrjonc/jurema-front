@@ -26,6 +26,7 @@ function Register() {
                 placeholder="Senha"
                 required
               />
+              <input type="text" id="usuario" placeholder="usuario" required />
               <button type="submit">
                 <b>Entrar</b>
               </button>
