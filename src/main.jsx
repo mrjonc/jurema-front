@@ -9,6 +9,10 @@ import ReactDOM from "react-dom/client";
 import Login from "./pages/Login-Register/Login.jsx";
 import Register from "./pages/Login-Register/Register.jsx"
 
+import Feed from "./pages/Feed/Feed.jsx";
+import Grupos from "./pages/Grupos/Grupos.jsx";
+import Notas from "./pages/Notas/Notas.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -22,7 +26,20 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [{}],
+    children: [
+      {
+        path: "/feed",
+        element: <Feed />,
+      },
+      {
+        path: "/grupos",
+        element: <Grupos />,
+      },
+      {
+        path: "/notas",
+        element: <Notas />,
+      },
+    ],
   },
 ]);
 
